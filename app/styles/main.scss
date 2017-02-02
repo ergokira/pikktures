@@ -1,0 +1,268 @@
+@import "bootstrap-custom.scss";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+/* ............................................... - 1.base - .................................................. */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+body
+{
+  background: url("../images/background.jpg") no-repeat center 0;
+
+}
+
+
+@media (min-width: 1200px)
+{
+  body
+  {
+    background-size: cover;
+  } 
+}
+
+
+.wraper
+{
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+/* ............................................... - 2.Header - .................................................. */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.header-main
+{
+  background: $main-bg;
+
+  .logo
+  {
+    font-family: $main-font;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 40px;
+
+    span
+    {
+      color: #FFEE00;
+      font-size: 45px;
+      font-weight: bold;
+    }
+  }
+
+  .navbar-custom
+  {
+    margin: 0;
+  }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+/* ............................................ - 3.Section-Home - ............................................... */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.section-home
+{
+
+  .content
+  {
+    padding: 50px 20px;
+    margin-bottom: 100px;
+
+    p
+    {
+      font: 25px bold;
+      color: #FFEE00;
+      text-transform: uppercase;
+      font-family: 'Frijole', cursive;
+      text-shadow: 2px 2px rgba(0,0,0,0.5);
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 768px)
+{
+  .section-home
+  {
+    .content
+    {
+      padding: 50px;
+      p
+      {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Frijole', cursive;
+      }
+    }   
+  }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+/* ............................................ - 4.Section-about - .............................................. */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.section-about
+{
+  .content
+  {
+    margin: 0 20px 120px 20px;
+
+    h2, p
+    {
+      background: $main-bg;      
+    }
+
+    h2
+    {
+      margin: 40px auto 20px auto;
+      width: 150px;
+      letter-spacing: -1px;
+      padding: 20px;
+      text-align: center;
+      color: #FFEE00;
+      font: bold 25px Georgia, serif;
+    }
+
+    p
+    {
+      color: #FFF;
+      padding: 15px;
+      text-indent: 5px;
+      font: 1.2em/1.5em Georgia, serif; 
+    }
+
+  }
+}
+
+@media (min-width: 768px)
+{
+  .section-about
+  {
+    .content
+    {
+      width: 62%;
+
+      h2
+      {
+        margin: 40px 0 0 0;
+      }
+
+      p
+      {
+        padding: 35px 55px;
+      }
+    }
+  }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+/* ............................................ - 5.Section-gallery - .............................................. */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.section-gallery
+{
+  .content
+  {
+    margin: 0 0 120px 0;
+  }
+
+    h2
+    {
+      background: $main-bg;      
+    }
+
+    h2
+    {
+      margin: 40px auto 20px auto;
+      width: 200px;
+      letter-spacing: -1px;
+      padding: 20px;
+      text-align: center;
+      color: #FFEE00;
+      font: bold 25px Georgia, serif;
+    }
+  
+}
+
+@media (min-width: 768px)
+{
+  .section-gallery
+  {
+    h2
+    {
+      margin: 40px 0 0 0;
+    }
+
+    .gallery
+    {
+      border-top: 15px solid $main-bg;
+      border-bottom: 15px solid $main-bg;
+    }
+  }  
+}
+
+
+@media (min-width: 992px)
+{
+  .section-gallery
+  {
+
+    .gallery
+    {
+      border: none;
+      background: $main-bg;
+      padding: 30px 0 30px 0;
+
+      #slider1_container
+      {
+        margin: 0 auto;
+      }
+    }    
+  }
+}
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+/* ............................................... - 5.Footer - .................................................. */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.footer-main
+{
+  background: $main-bg;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  margin-top: 40px;
+  
+  p
+  {
+    color: #FFF;
+    padding-top: 10px;
+    font-family: $main-font;
+    font-size: 13px;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 768px)
+{
+  .footer-main
+  {
+    position: fixed;
+    bottom: 5%;
+
+    p
+    {
+      padding-right: 40px;
+      text-align: right;
+    }   
+  }
+}

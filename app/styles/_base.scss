@@ -1,0 +1,53 @@
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "jssor-style.scss";
+
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Frijole);
+
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+
+//Variables
+
+$main-bg: rgba(0, 0, 0, 0.7);
+
+$navbar-custom-bg: none;
+
+$navbar-custom-border: none;
+
+$navbar-custom-color: #FFF;
+
+$main-font:'Arvo', serif;
+
+
+//brand
+$navbar-custom-brand-color: #FFF;
+
+$navbar-custom-brand-hover-color: #FFEE00;
+
+$navbar-custom-brand-hover-bg: none;
+
+
+//link
+$navbar-custom-link-color: #FFF;
+
+$navbar-custom-link-hover-color: #FFEE00;
+
+$navbar-custom-link-hover-bg: rgba(0, 0, 0, 0.2);
+
+$navbar-custom-link-active-color: #FFEE00;
+
+$navbar-custom-link-active-bg: none;
+
+$navbar-custom-link-disabled-color: none;
+
+$navbar-custom-link-disabled-bg: none;
+
+
+//toggle
+$navbar-custom-toggle-border-color: #FFF;
+
+$navbar-custom-toggle-hover-bg: none;
+
+$navbar-custom-toggle-icon-bar-bg: #FFF;
+
