@@ -4,13 +4,9 @@
 /* ............................................... - 1.base - .................................................. */
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-html{
-  height: 100vh;
-}
 body
 {
   background: url("../img/background.jpg") no-repeat center 0;
-  height: 100%;
 }
 
 
@@ -35,12 +31,14 @@ body
 /* ............................................... - 2.Header - .................................................. */
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-.header-main
+.navbar-custom
 {
   background: $main-bg;
+  margin: 0;
 
   .logo
   {
+    margin-left: 10px;
     font-family: $main-font;
     text-decoration: none;
     color: #FFF;
@@ -53,11 +51,6 @@ body
       font-weight: bold;
     }
   }
-
-  .navbar-custom
-  {
-    margin: 0;
-  }
 }
 
 
@@ -67,6 +60,7 @@ body
 
 .section-home
 {
+  margin-top: 100px;
 
   .content
   {
@@ -109,6 +103,7 @@ body
 
 .section-about
 {
+  margin-top: 100px;
   .content
   {
     margin: 0 20px 120px 20px;
@@ -140,86 +135,64 @@ body
   }
 }
 
-@media (min-width: 768px)
-{
-  .section-about
-  {
-    .content
-    {
-      width: 62%;
+// @media (min-width: 768px)
+// {
+//   .section-about
+//   {
+//     .content
+//     {
+//       width: 62%;
 
-      h2
-      {
-        margin: 40px 0 0 0;
-      }
+//       h2
+//       {
+//         margin: 40px 0 0 0;
+//       }
 
-      p
-      {
-        padding: 35px 55px;
-      }
-    }
-  }
-}
+//       p
+//       {
+//         padding: 35px 55px;
+//       }
+//     }
+//   }
+// }
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
 /* ............................................ - 5.Section-gallery - .............................................. */
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///style="width: 60%; margin: 0 auto"
-.section-gallery
-{
-    h2
-    {
-      background: $main-bg;      
-    }
-
-    h2
-    {
-      margin: 40px auto 20px auto;
-      width: 200px;
-      letter-spacing: -1px;
-      padding: 20px;
-      text-align: center;
-      color: #FFEE00;
-      font: bold 25px Georgia, serif;
-    }
-  
+.section-gallery{
+    margin-top: 150px;
+}
+#myCarousel{
+  width: 100%;
+  margin: 20px auto 0 auto;
 }
 
-// @media (min-width: 768px)
-// {
-//   .section-gallery
-//   {
-//     // h2
-//     // {
-//     //   margin: 40px 0 0 0;
-//     // }
-
-//     .gallery
-//     {
-//       .item img{
-//           height: 500px;
-//       }
-//     }
-//   }  
-// }
+@media (min-width: 768px)
+{
+  .section-gallery{
+    margin-top: 60px;
+  }
+  #myCarousel{
+    width: 90%;
+  } 
+}
 
 
-// @media (min-width: 992px)
-// {
-//   .section-gallery
-//   {
+@media (min-width: 992px)
+{
+  #myCarousel{
+    width: 70%;
+  } 
+}
 
-//     .gallery
-//     {
-//       // border: none;
-//       // background: $main-bg;
-//       // padding: 30px 0 30px 0;
-//     }    
-//   }
-// }
-
-
+@media (min-width: 1200px)
+{
+  #myCarousel{
+    width: 65%;
+  } 
+}
 
 
 
@@ -230,10 +203,9 @@ body
 .footer-main
 {
   background: $main-bg;
-  position: absolute;
-  bottom: 5%;
+  position: fixed;
+  bottom: 0%;
   width: 100%;
-  margin-top: 40px;
   
   p
   {
@@ -250,9 +222,6 @@ body
 {
   .footer-main
   {
-    position: fixed;
-    bottom: 0%;
-
     p
     {
       padding-right: 40px;
