@@ -4,10 +4,13 @@
 /* ............................................... - 1.base - .................................................. */
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+html{
+  height: 100vh;
+}
 body
 {
-  background: url("../images/background.jpg") no-repeat center 0;
-
+  background: url("../img/background.jpg") no-repeat center 0;
+  height: 100%;
 }
 
 
@@ -162,14 +165,9 @@ body
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
 /* ............................................ - 5.Section-gallery - .............................................. */
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+///style="width: 60%; margin: 0 auto"
 .section-gallery
 {
-  .content
-  {
-    margin: 0 0 120px 0;
-  }
-
     h2
     {
       background: $main-bg;      
@@ -188,42 +186,38 @@ body
   
 }
 
-@media (min-width: 768px)
-{
-  .section-gallery
-  {
-    h2
-    {
-      margin: 40px 0 0 0;
-    }
+// @media (min-width: 768px)
+// {
+//   .section-gallery
+//   {
+//     // h2
+//     // {
+//     //   margin: 40px 0 0 0;
+//     // }
 
-    .gallery
-    {
-      border-top: 15px solid $main-bg;
-      border-bottom: 15px solid $main-bg;
-    }
-  }  
-}
+//     .gallery
+//     {
+//       .item img{
+//           height: 500px;
+//       }
+//     }
+//   }  
+// }
 
 
-@media (min-width: 992px)
-{
-  .section-gallery
-  {
+// @media (min-width: 992px)
+// {
+//   .section-gallery
+//   {
 
-    .gallery
-    {
-      border: none;
-      background: $main-bg;
-      padding: 30px 0 30px 0;
-
-      #slider1_container
-      {
-        margin: 0 auto;
-      }
-    }    
-  }
-}
+//     .gallery
+//     {
+//       // border: none;
+//       // background: $main-bg;
+//       // padding: 30px 0 30px 0;
+//     }    
+//   }
+// }
 
 
 
@@ -257,7 +251,7 @@ body
   .footer-main
   {
     position: fixed;
-    bottom: 5%;
+    bottom: 0%;
 
     p
     {
