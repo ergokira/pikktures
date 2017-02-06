@@ -6,10 +6,29 @@ $(function () {
 		if (window.matchMedia("(max-width: 760px)").matches) {
 			$(this).closest('.collapse').collapse('toggle');
 		}
-	    $('.main-nav li').removeClass('active-tab');
-	    $('section').children().addClass('hide');
-	    $('.section-' + $(this).parent().attr('id')).removeClass('hide');
-	    $(this).parent().addClass('active-tab');
+	});
+
+	$(window).on('hashchange', function() {
+		$('.main-nav li').removeClass('active-tab');
+		$('section').children().addClass('hide');
+		var currentHash = window.location.hash;
+		console.log(currentHash);
+		switch (currentHash) {
+			case '#home':
+				$('#home').addClass('active-tab');
+				$('.section-home').removeClass('hide');
+				break;
+			case '#about':
+				$('#about').addClass('active-tab');
+				$('.section-about').removeClass('hide');
+				break;
+			case '#gallery':
+				$('#gallery').addClass('active-tab');
+				$('.section-gallery').removeClass('hide');
+				break;
+			default:
+				break;
+		} 
 	});
 
 	//Script to Activate the Carousel
