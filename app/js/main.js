@@ -18,6 +18,11 @@ $(function () {
 			$('.main-nav li').removeClass('active-tab');
 			$(currentHash).addClass('active-tab');
 		}
+		else
+		{	
+			$('#home').addClass('active-tab');
+			$('.section-home').removeClass('hide');
+		}
 	});
 
 	//Script to Activate the Carousel
