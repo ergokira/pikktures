@@ -1,15 +1,21 @@
 $(function () {
 
 	'use strict';
-	
+
+	//Hide mobile menu on click
 	$('.main-nav li a').on('click', function(event) {
 		if (window.matchMedia("(max-width: 760px)").matches) {
 			$(this).closest('.collapse').collapse('toggle');
 		}
 	});
 
-	$(window).on('hashchange', function() {
+	//Update the active depending of the current hash
+	$(window).on('load hashchange', function() {
 		var currentHash = location.hash;
+		if(currentHash){
+			$('section').children().addClass('hide');
+			$('.section-' + currentHash.replace(/^#/,'')).removeClass('hide');
+		}
 		$('.main-nav li').removeClass('active-tab');
 		$('section').children().addClass('hide');
 		$(currentHash).addClass('active-tab');
