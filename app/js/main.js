@@ -15,11 +15,9 @@ $(function () {
 		if(currentHash){
 			$('section').children().addClass('hide');
 			$('.section-' + currentHash.replace(/^#/,'')).removeClass('hide');
+			$('.main-nav li').removeClass('active-tab');
+			$(currentHash).addClass('active-tab');
 		}
-		$('.main-nav li').removeClass('active-tab');
-		$('section').children().addClass('hide');
-		$(currentHash).addClass('active-tab');
-		$('.section-' + currentHash.replace(/^#/,'')).removeClass('hide');
 	});
 
 	//Script to Activate the Carousel
