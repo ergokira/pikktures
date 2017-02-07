@@ -9,10 +9,10 @@ $(function () {
 	});
 
 	$(window).on('hashchange', function() {
-		var currentHash = window.location.hash;
+		var currentHash = location.hash;
 		$('.main-nav li').removeClass('active-tab');
 		$('section').children().addClass('hide');
-		$('currentHash').addClass('active-tab');
+		$(currentHash).addClass('active-tab');
 		$('.section-' + currentHash.replace(/^#/,'')).removeClass('hide');
 	});
 
