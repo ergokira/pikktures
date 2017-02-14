@@ -8,9 +8,8 @@ $(function () {
 			$(this).closest('.collapse').collapse('toggle');
 		}
 	});
-
 	//Update the active depending of the current hash
-	$(window).on('load hashchange', function() {
+	function loadHash(){
 		var currentHash = location.hash;
 		if(currentHash){
 			$('section').children().addClass('hide');
@@ -23,7 +22,9 @@ $(function () {
 			$('#home').addClass('active-tab');
 			$('.section-home').removeClass('hide');
 		}
-	});
+	}
+	loadHash();
+	$(window).on('hashchange', loadHash);
 
 	//Script to Activate the Carousel
 	$('.carousel').carousel({
